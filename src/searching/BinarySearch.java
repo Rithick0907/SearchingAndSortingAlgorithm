@@ -3,6 +3,10 @@ package searching;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
+//Time Complexity = O(logn);
+//Space Complexity = O(logn);
+//Restriction: Our Array must be sorted.
+
 public class BinarySearch {
 
     private static int binarySearch(int[] nums,int target,int start,int end){

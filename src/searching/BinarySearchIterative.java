@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 
 
 //Time Complexity = O(logn);
-//Space Complexity = O();
+//Space Complexity = O(1);
 //Restriction: Our Array must be sorted.
 
 public class BinarySearchIterative {

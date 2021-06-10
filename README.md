@@ -24,3 +24,9 @@ This repository contains sorting and searching algorithm implemented in Java.
 
 6. Exponential Search
 ![ES](https://user-images.githubusercontent.com/49742736/121469692-8ff23200-c9da-11eb-8b15-4995bbbbd134.PNG)
+
+### Sorting Algorithm
+1. Bubble Sort
+![BS](https://user-images.githubusercontent.com/49742736/121517320-d9f40b80-ca0c-11eb-8654-0cc9ba0e84fe.PNG)
+2. Selection Sort
+![SS](https://user-images.githubusercontent.com/49742736/121517334-e1b3b000-ca0c-11eb-95a2-32009df55817.PNG)

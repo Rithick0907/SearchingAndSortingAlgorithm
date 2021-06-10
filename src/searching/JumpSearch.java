@@ -17,24 +17,16 @@ public class JumpSearch {
         int start = 0;
         int next = blockSize;
 
-        while(start < nums.length && nums[next - 1] < target){
+        while (start < nums.length && nums[next - 1] < target) {
             ++start;
             next += blockSize;
-            if(next > nums.length)  next = nums.length;
+            if (next > nums.length) next = nums.length;
         }
 
-        for(int i = start; i < next; i++){
-            if(nums[i] == target)   return i;
+        for (int i = start; i < next; i++) {
+            if (nums[i] == target) return i;
         }
 
         return -1;
-    }
-
-    public static void main(String[] args) throws Exception {
-        var br = new BufferedReader(new InputStreamReader(System.in));
-        int[] nums = {10, 15, 20, 25, 30, 35, 37, 40};
-        int target = Integer.parseInt(br.readLine());
-
-        System.out.println(jumpSearch(nums, target));
     }
 }

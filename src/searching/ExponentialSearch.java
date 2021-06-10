@@ -15,20 +15,12 @@ import java.io.InputStreamReader;
 public class ExponentialSearch {
     public static int exponentialSearch(int[] nums, int target) {
         int bound = 1;
-        while(bound < nums.length && nums[bound] < target)
+        while (bound < nums.length && nums[bound] < target)
             bound *= 2;
 
         int start = bound / 2;
-        int end = Math.min(bound,nums.length);
+        int end = Math.min(bound, nums.length);
 
-        return BinarySearchIterative.binarySearch(nums,target,start,end);
-    }
-
-    public static void main(String[] args) throws Exception {
-        var br = new BufferedReader(new InputStreamReader(System.in));
-        int[] nums = {10, 15, 20, 25, 30, 35, 37, 40};
-        int target = Integer.parseInt(br.readLine());
-
-        System.out.println(exponentialSearch(nums, target));
+        return BinarySearchIterative.binarySearch(nums, target, start, end);
     }
 }
